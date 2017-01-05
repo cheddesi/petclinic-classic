@@ -43,7 +43,7 @@
 		<dandelion.datatables.version>1.1.0</dandelion.datatables.version>
 
 		<cobertura.version>2.7</cobertura.version>
-		<tomcat.url>http://localhost:8580/manager</tomcat.url>
+		<tomcat.url>http://localhost:8580/manager/text</tomcat.url>
 
 	</properties>
 
@@ -377,7 +377,7 @@
 					<url>${tomcat.url}</url>
 					<server>TomcatServer</server>
 					<warFile>target/petclinic.war</warFile>
-					<path>/petclinic</path>
+					<!-- <path>/petclinic</path> -->
 				</configuration>
 
 			</plugin>

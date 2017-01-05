@@ -376,7 +376,7 @@
 				<configuration>
 					<url>${tomcat.url}</url>
 					<server>TomcatServer</server>
-					<warFile>${maven.war.final.name}</warFile>
+					<warFile>target/${maven.war.final.name}</warFile>
 					<path>/${maven.war.final.name}</path>
 				</configuration>
 

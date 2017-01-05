@@ -374,9 +374,9 @@
                     <path>/petclinic</path>
                 </configuration> -->
 				<configuration>
-					<url>http://localhost:8080/manager/text</url>
+					<url>${tomcat.url}</url>
 					<server>TomcatServer</server>
-					<path>/mkyongWebApp</path>
+					<path>/petclinic</path>
 				</configuration>
 
 			</plugin>

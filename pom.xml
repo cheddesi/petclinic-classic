@@ -376,7 +376,8 @@
 				<configuration>
 					<url>${tomcat.url}</url>
 					<server>TomcatServer</server>
-					<path>/petclinic</path>
+					<warFile>${maven.war.final.name}</warFile>
+					<path>/${maven.war.final.name}</path>
 				</configuration>
 
 			</plugin>

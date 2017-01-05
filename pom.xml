@@ -44,6 +44,8 @@
 
 		<cobertura.version>2.7</cobertura.version>
 		<tomcat.url>http://localhost:8580/manager/text</tomcat.url>
+		<tomcat.user>admin</tomcat.user>
+		<tomcat.password>password</tomcat.password>
 
 	</properties>
 
@@ -367,7 +369,7 @@
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
-				<version>2.2</version>
+				<version>2.1</version>
 				<!-- <configuration>
                     <server>tomcat-development-server</server>
                     <port>9966</port>
@@ -376,8 +378,11 @@
 				<configuration>
 					<url>${tomcat.url}</url>
 					<server>TomcatServer</server>
+					<!-- <warFile>target/petclinic.war</warFile>-->
 					<warFile>target/petclinic.war</warFile>
-					<!-- <path>/petclinic</path> -->
+					<username>${tomcat.user}</username>
+					<password>${tomcat.password}</password>
+					<path>/petclinic</path>
 				</configuration>
 
 			</plugin>
